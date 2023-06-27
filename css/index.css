@@ -1,10 +1,12 @@
 body{
-    margin: 0%;
+    margin:0%;
     padding:0%;
     background-color: rgb(252, 247, 247);
     font-family: 'Montserrat', sans-serif;
 }
-
+p{
+    margin: 0%;
+}
 .cabecera{
      background-color: #172239;
      height:78px;
@@ -28,7 +30,6 @@ body{
 .cabecera .boton button{
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0);
-    
     color:white;
     border: none;
     outline: none; 
@@ -48,6 +49,43 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-transform: uppercase;
+    color: white;
+     line-height: 3px;
+    font-weight: bold;
+}
+.inicio .saludo .norte{
+    margin-bottom: 20px;
+    font-size:18px;
+    font-weight:400;
+    letter-spacing: 1px;
+    
+}
+.inicio .saludo .agro{
+    margin:40px;
+    font-weight: 800;
+    font-size: 58px;
+}
+.inicio .saludo span{
+    color:#f5a425;
+}
+.inicio .saludo .quien a{
+    background-color:#f5a425;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border:none;
+    width: 180px;
+    height: 60px;
+    padding: 12px 20px;
+}
+.inicio .saludo .quien{
+    margin-top: 40px;
+}
+.desarrollo{
+    background-color:#172239;
+    padding:0%;
+    margin:0%;
+    height:100vh;
+    width:100%;
 }
