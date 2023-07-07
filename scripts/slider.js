@@ -20,7 +20,7 @@ function reloadSliderImage() {
     let button = document.getElementById("SliderButton");
     let inicio = document.getElementById("inicio");
 
-    inicio.style.background = "url(//" + window.location.host +"/images/" + SlideImages[actualSlide] + ")";
+    inicio.style.background = "url(./images/" + SlideImages[actualSlide] + ")";
     inicio.style.backgroundPosition = "center";
     inicio.style.backgroundSize = "cover";
     button.href = SlideLink[actualSlide];
