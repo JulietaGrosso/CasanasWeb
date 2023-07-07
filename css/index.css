@@ -476,14 +476,23 @@ footer{
         margin: 10px;
     }
 
-    .cabecera .boton 
 
     .cabecera .buscador{
+        display: none !important;
+    }
+
+    .cabecera .redes a {
         display: none;
     }
+
+    .cabecera .redes .buscadorCelu {
+        display: block;
+    }
+
     .buscadorCelu i {
+        
         color: #f5a425;
         font-size: 25px
     }
-       
+        
 }
