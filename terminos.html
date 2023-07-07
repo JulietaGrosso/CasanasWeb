@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <script src="./scripts/menu.js" ></script>
+    <script src="./scripts/buscador.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -23,6 +25,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="redes">
+            <a class="buscadorCelu" onClick="abrirBuscador()" ><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="https://api.whatsapp.com/send/?phone=3482542576" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/agro_patria_oportunidades/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/ernesto.casanas" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
@@ -48,8 +51,7 @@
     <div class="desarrollo">
         <div class="texto">
             <h1 style="border: 1px solid #f5a425; padding: 7px;">Agro Patria</h1><br>
-            <h1>Terminos y condiciones</h1><br>
-            
+            <h1>Terminos y condiciones</h1><br> 
 <p>
 AgroPatria, persona jurídica de derecho privado describe, a través de este documento, las normas de uso del sitio nodefinido.com y de cualquier otro sitio web, tienda o aplicación operada por el titular.
 Al navegar por este sitio web, consideramos que está de acuerdo con las condiciones de uso que figuran a continuación.

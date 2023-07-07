@@ -466,4 +466,24 @@ footer{
         margin-bottom: 20px;
     }
 
+
+    .cabecera .boton h1{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #fff;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .cabecera .boton 
+
+    .cabecera .buscador{
+        display: none;
+    }
+    .buscadorCelu i {
+        color: #f5a425;
+        font-size: 25px
+    }
+       
 }
