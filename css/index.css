@@ -4,11 +4,20 @@ body{
     background-color: rgb(252, 247, 247);
     font-family: 'Montserrat', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+a,button {
+    cursor: pointer;
+}
+
 p{
     margin: 0%;
 }
 .cabecera{
-     background-color: #172239;
+     background-color:#1e2127;
      height:78px;
      padding:0%;
      margin:0%;
@@ -19,20 +28,82 @@ p{
     padding-left: 20px;
     padding-right: 20px;
 }
-
-.cabecera .titulo{
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e2127;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+.menu .opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.menu .opciones a{
     font-size: 20px;
+    color:#f5a425;
+    text-decoration: none;
     text-transform: uppercase;
-    font-weight: 800;
-    color: #fff;
+    margin: 10px;
+}
+.menu .opciones .cerrar a{
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    right: 2%;
 }
 
+.cabecera .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cabecera .boton button{
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0);
     color:white;
-    border: none;
+    border:solid 2px #f5a425;
     outline: none; 
+    height: 35px;
+}
+.cabecera .boton h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+.cabecera .buscador{
+    background-color: rgba(255, 255, 255, 0.184);
+    padding: 10px;
+    border-radius: 99px;
+    width:28%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cabecera .buscador input{
+    background-color:rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    color: rgba(255, 247, 247, 0.7);
+    width: 90%;
+}
+.cabecera .buscador i{
+    padding-left: 2px;
+}
+.cabecera .redes a{
+    color: #f5a425;
+    font-size: 25px;
+    margin:2px;
 }
 
 .inicio{
@@ -44,48 +115,355 @@ p{
 .inicio .saludo{
     width: 100%;
     height:100%;
-    background-color:#1722396c;
+    background-color:#1e212796;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
     color: white;
      line-height: 3px;
     font-weight: bold;
 }
 .inicio .saludo .norte{
-    margin-bottom: 20px;
-    font-size:18px;
-    font-weight:400;
-    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-size:15px;
+    font-weight:600;
+    
+    text-shadow: 2px 1px 4px #0000007a;
+    letter-spacing: 1.2px;
+    position: relative;
+    display: inline-block;
     
 }
-.inicio .saludo .agro{
-    margin:40px;
-    font-weight: 800;
-    font-size: 58px;
+
+.inicio .saludo .norte::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: #f5a425;
 }
+
+.inicio .saludo .norte::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #f5a425;
+}
+
+
+.inicio .saludo .agro{
+    margin-top:25px;
+    width: 100%;
+    line-height: 50px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(218, 218, 218);
+    text-shadow: 3px 3px 12px #000000b9;
+    letter-spacing: 1.2px;
+}
+
+
+
 .inicio .saludo span{
     color:#f5a425;
 }
 .inicio .saludo .quien a{
-    background-color:#f5a425;
-    color: white;
     font-size: 13px;
     text-transform: uppercase;
-    border:none;
-    width: 180px;
-    height: 60px;
-    padding: 12px 20px;
+    background-color: #f5a425;
+    color: #fff;
+    /* width: 100px; */
+    height: 30px;
+    border-radius: 4px;
+    padding: 7px 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: black 1px 1px 30px;
 }
 .inicio .saludo .quien{
     margin-top: 40px;
 }
+
+.saludo .next {
+    position: absolute;
+    right: 50px;
+    font-size: 30px;
+    color: rgb(151, 151, 151);
+}
+
+.saludo .back {
+    left: 50px;
+    position: absolute;
+    font-size: 30px;
+    color: rgb(151, 151, 151);
+}
+
+
 .desarrollo{
-    background-color:#172239;
+    background-color:#15181d;
     padding:0%;
+    padding: 50px 0;
     margin:0%;
-    height:100vh;
-    width:100%;
+    width: 100%;
+}
+
+.desarrollo .contenido {
+    width: calc( 100% - 20px );
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 48px;
+    color: #f5a425;
+    
+}
+
+.desarrollo .contenido h3 {
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.desarrollo .contenido h3::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: #f5a425;
+}
+
+.desarrollo .contenido h3::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #f5a425;
+}
+
+.desarrollo .contenido h1 {
+    letter-spacing: 1.2px;
+    color: rgb(191, 191, 191);
+    font-size: calc(1.375rem + 1.5vw);
+
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.desarrollo .contenido .servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+
+
+}
+.desarrollo .contenido .servicios .servicio {
+    margin: 7px 10px;
+    width: 347px;
+    border-radius:5px;
+    overflow: hidden;
+    border-bottom: 4px solid #f5a425;
+}
+.desarrollo .contenido .servicios .servicio img{
+    width: 100%;
+    height: 214px;
+    display: flex;
+    object-fit: cover;
+    flex-direction: row;
+    justify-content: center;
+}
+.desarrollo .contenido .servicios .servicio .texto{
+    padding: 24px;
+    padding-bottom: 5px;
+    background-color:#1e2127;
+    width: calc(100% - 48px);
+}
+.desarrollo .contenido .servicios .servicio .titulo{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: rgb(191, 191, 191);
+}
+.desarrollo .contenido .servicios .servicio .descripcion{
+    margin-top: 10px;
+    height: 30px;
+    color: rgb(113, 113, 113);
+    font-family: "Heebo",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.desarrollo .contenido .servicios .servicio .texto .meinteresa a{
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #f5a425;
+    color: #fff;
+    height: 30px;
+    border-radius: 4px;
+    padding: 7px 23px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: black 1px 1px 30px;
+
+}
+.desarrollo .contenido .servicios .servicio .texto .meinteresa{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+.piedepag{
+    background-color:#1e2127;
+    width: 100%;
+    padding: 20px 0;
+    padding-top: 35px;
+    margin:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.piedepag .redes{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.piedepag .redes a {
+    margin: 5px;
+    text-decoration: none;
+    color: #ffffff66;
+}
+
+.piedepag .titulo {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #FEA116 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.piedepag .contacto a{
+    color:#ffffff66;
+    text-decoration: none;
+    text-transform:none;
+    letter-spacing: 2px;
+    margin: 5px;
+    
+}
+.piedepag .contenido{
+    height: 200px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start; 
+    line-height: 23px;
+    padding-top: 10px;
+}
+footer{
+    width:calc(100% - 30px);
+    height: 50px;
+    background-color:#1e2127;
+    color: #878686;
+    padding: 15px;
+}
+
+
+.gold {
+    color: #f5a425;
+}
+
+@media (max-width: 700px) {
+
+    .inicio .saludo .agro{
+        font-size: 22px;
+    }
+    
+
+    .cabecera .boton button{
+        font-size: 12px;
+        height: 20px;
+    }
+    .cabecera .boton h1{
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight:700;
+        margin: 5px;
+    }
+    .cabecera .buscador{
+        padding: 10px;
+        border-radius: 99px;
+        width:20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .piedepag{
+        background-color:#1e2127;
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+        padding-top: 35px;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items: flex-start;
+        
+    }
+    .piedepag .contenido{
+        height: auto;
+        margin: 10px;
+        
+    }
+
+
+    .desarrollo .contenido { 
+        text-align: center;
+    }
+
+    .desarrollo .contenido .servicios .servicio {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
 }

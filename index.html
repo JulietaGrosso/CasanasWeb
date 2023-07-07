@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Pagina nueva</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Patria</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <script src="./scripts/menu.js" ></script>
 </head>
 
 <body>
     <div class="cabecera">
-         <div class="titulo">
-            <h1>Casañas</h1> 
-        </div>
         <div class="boton">
-            <button> <i class="fa-solid fa-bars"></i> </button>
+            <button onClick="handleMenu()"> <i class="fa-solid fa-bars"></i> </button>
+            <a href="./index.html"><h1><span class="gold">Agro</span> Patria</h1> </a>
         </div>
+        <div class="buscador">
+            <input type="text" placeholder="¿Qué estás buscando?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="redes">
+            <a href="https://api.whatsapp.com/send/?phone=3482542576" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/agro_patria_oportunidades/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ernesto.casanas" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://ar.linkedin.com/in/ernesto-casanas-gazzola-maq-agricolas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </div>
+    <div class="menu" id="menu">
+           <div class="opciones">
+                <a href="./index.html">Inicio</a>
+                <a href="./informacion.html">¿Quiénes Somos?</a>
+                <a href="./productos.html">Tractores</a>
+                <a href="./productos.html">Implementos Agrícolas</a>
+                <a href="./productos.html">Cosechadoras</a>
+                <a href="./productos.html">Vehículos</a>
+                <a href="./productos.html">Energía Solar</a>
+            <div class="cerrar">
+                <a onClick="handleMenu()"><i class="fa-solid fa-xmark"></i></a> 
+            </div>  
+           </div>   
     </div>
     
     <div class="inicio">
         <div class="saludo">
-            <p class="norte">Representando el Norte Santafesino</p>
-            <p class="agro"><span>Agro</span> Casañas</p>
+            <p class="norte">AGRO PATRIA</p>
+            <p class="agro">Representando al<br>Norte Santafesino<br>para todo el país</p>
             <div class="quien">
-                <a>¿Quiènes Somos?</a>
+                <a href="./informacion.html">¿Quiénes Somos?</a>
+            </div>
+
+            <div class="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+    
+            <div class="back">
+                <i class="fa-solid fa-chevron-left"></i>
             </div>
         </div>
     </div>
+
     <div class="desarrollo">
         <div class="contenido">
-            <p>Hola</p>
+            <h3>Categorías</h3>
+            <h1>Explora Nuestros Productos</h1>
+            <div class="servicios">
+                <div class="servicio">
+                    <img src="./images/tractor.jpg" alt="tractores">
+                    <div class="texto">
+                        <p class="titulo">Tractores</p>
+                        <p class="descripcion">Tractores nuevos y usados. Marcas Case y Pauny...</p>
+                        <div class="meinteresa">
+                            <a href="/productos.html">Más información</a>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="servicio">
+                    <img src="./images/sembradora.jpg" alt="sembradora">
+                    <div class="texto">
+                        <p class="titulo">Implementos Agrícolas</p>
+                        <p class="descripcion">Sembradoras nuevas y usadas, marca Super Walter...</p>
+                        <div class="meinteresa">
+                            <a href="/productos.html">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicio">
+                    <img src="images/panelessolares.jpg" alt="paneles solares">
+                    <div class="texto">
+                        <p class="titulo">Energía Solar</p>
+                        <p class="descripcion">Paneles Solares, baterías... </p>
+                        <div class="meinteresa">
+                            <a href="/productos.html">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div> 
+    <div class="piedepag">
+        <div class="contacto">
+            <p class="titulo">Sobre nosotros</p>
+            <div class="contenido">
+                <a href="./terminos.html"><i class="fa-solid fa-pen"></i> Términos y Condiciones.</a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i> +54 3482 542576</a>
+                <a href=""><i class="fa-regular fa-envelope"></i> AgroPatria@gmail.com</a>
+            </div>
+        </div>
+        <div class="redes">
+            <p class="titulo">Nuestras Redes</p>
+            <div class="contenido">
+                <a href="https://www.instagram.com/agro_patria_oportunidades/" target="_blank"><i class="fa-brands fa-instagram"></i> Agro Patria Oportunidades</a>
+                <a href="https://ar.linkedin.com/in/ernesto-casanas-gazzola-maq-agricolas" target="_blank"><i class="fa-brands fa-linkedin"></i> Ernesto Casañas Gazzola</a>
+                <a href="https://www.facebook.com/ernesto.casanas" target="_blank"><i class="fa-brands fa-facebook-f"></i> Ernesto Casañas</a>
+            </div>
+        </div>
+        <div class="ubicacion">
+             <p class="titulo">Ubicación</p>
+             <div class="contenido">
+                <div style="margin-top: 10px; width: 240px; height: 240px;;"><iframe width="240px" height="240px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m10!1m8!1m3!1d438.89427497283776!2d-59.260154!3d-28.3541842!3m2!1i1024!2i768!4f13.1!6i20"></iframe></div>
+            </div>
+        </div>
+    
     </div>
+   <footer>
+    <p>Agro Patria © Todos los derechos reservados.</p>
+   </footer>
+  
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
