@@ -1,0 +1,35 @@
+.desarrollo .texto{
+    width:calc(100% -80px);  
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+.desarrollo .texto h1{
+    color:#f5a425;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.desarrollo .texto p{
+    color: antiquewhite;
+    text-align:justify;
+    line-height:23px;
+    line-break: auto;
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+
+.desarrollo .texto b {
+    color:#f5a425;
+    font-size: 15px;
+}
+
+@media (max-width: 700px){
+    .desarrollo .texto h1{
+        letter-spacing: 3px;
+        font-size:26px;
+        text-align: center;
+    } 
+}
