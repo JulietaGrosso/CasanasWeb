@@ -80,6 +80,13 @@
     letter-spacing: 1px;
     color: rgb(191, 191, 191);
 }
+.seccion_productos .productos .producto .precio{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color:#f5a425;
+}
 .seccion_productos .productos .producto .descripcion{
     margin-top: 10px;
     height: 25px;

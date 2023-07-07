@@ -105,6 +105,9 @@ p{
     font-size: 25px;
     margin:2px;
 }
+.cabecera .redes .buscadorCelu {
+    display: none;
+}
 
 .inicio{
     background:url(../images/1.jpg);
