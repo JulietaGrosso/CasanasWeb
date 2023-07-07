@@ -206,6 +206,7 @@ p{
     right: 50px;
     font-size: 30px;
     color: rgb(151, 151, 151);
+    cursor: pointer;
 }
 
 .saludo .back {
@@ -213,6 +214,7 @@ p{
     position: absolute;
     font-size: 30px;
     color: rgb(151, 151, 151);
+    cursor: pointer;
 }
 
 
@@ -491,6 +493,14 @@ footer{
         
         color: #f5a425;
         font-size: 25px
+    }
+
+    .saludo .next {
+        right: 30px;
+    }
+    
+    .saludo .back {
+        left: 30px;
     }
         
 }

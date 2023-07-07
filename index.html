@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <script src="./scripts/menu.js" ></script>
+    <script src="./scripts/slider.js" ></script>
     <script src="./scripts/buscador.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -48,19 +49,19 @@
            </div>   
     </div>
     
-    <div class="inicio">
+    <div class="inicio" id="inicio">
         <div class="saludo">
             <p class="norte">AGRO PATRIA</p>
             <p class="agro">Representando al<br>Norte Santafesino<br>para todo el país</p>
             <div class="quien">
-                <a href="./informacion.html">¿Quiénes Somos?</a>
+                <a href="./informacion.html" id="SliderButton">¿Quiénes Somos?</a>
             </div>
 
-            <div class="next">
+            <div class="next" onclick="nextImage()">
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
     
-            <div class="back">
+            <div class="back" onclick="backImage()">
                 <i class="fa-solid fa-chevron-left"></i>
             </div>
         </div>
